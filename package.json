@@ -4,8 +4,8 @@
   "description": "Seed for TypeScript and Webpack",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
-    "tsc:watch": "rimraf ./build && node_modules/.bin/tsc --watch",
+    "start": "webpack-dev-server --hot",
+    "tsc:watch": "rimraf './build/!(.gitignore)' && node_modules/.bin/tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +17,7 @@
   ],
   "devDependencies": {
     "awesome-typescript-loader": "3.4.1",
+    "prettyjson": "^1.2.1",
     "rimraf": "^2.6.2",
     "typescript": "^2.9.0-dev.20180512",
     "webpack": "3.10.0",
