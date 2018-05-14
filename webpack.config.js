@@ -1,3 +1,4 @@
+const webpack = require("webpack");
 const path = require("path");
 const prettyjson = require("prettyjson");
 const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
@@ -17,8 +18,8 @@ var webpackConfig = {
   devServer: {
     port: 3000,
     watchContentBase: false,
-    hot: true,
     stats: "errors-only",
+    hot: true,
     host: "0.0.0.0"
   },
   module: {
@@ -28,6 +29,7 @@ var webpackConfig = {
       }]
   },
   plugins: [
+    new webpack.NamedModulesPlugin(),
     new HardSourceWebpackPlugin(),
   ]
 };

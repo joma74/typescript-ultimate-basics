@@ -10,12 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UltimateAngular/typescript-basics-seed.git"
+    "url": "git+https://github.com/joma74/typescript-ultimate-basics.git"
   },
   "keywords": [
     "typescript"
   ],
   "devDependencies": {
+    "@types/webpack-env": "^1.13.6",
     "awesome-typescript-loader": "3.4.1",
     "hard-source-webpack-plugin": "^0.6.7",
     "prettyjson": "^1.2.1",
