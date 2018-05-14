@@ -1,5 +1,6 @@
 const path = require("path");
 const prettyjson = require("prettyjson");
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 
 /**
  * @type {import ("webpack").Configuration}
@@ -25,7 +26,10 @@ var webpackConfig = {
           test: /\.ts$/,
           use: 'awesome-typescript-loader'
       }]
-  }
+  },
+  plugins: [
+    new HardSourceWebpackPlugin(),
+  ]
 };
 
 console.log(prettyjson.render(webpackConfig));

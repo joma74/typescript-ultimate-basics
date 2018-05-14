@@ -17,6 +17,7 @@
   ],
   "devDependencies": {
     "awesome-typescript-loader": "3.4.1",
+    "hard-source-webpack-plugin": "^0.6.7",
     "prettyjson": "^1.2.1",
     "rimraf": "^2.6.2",
     "typescript": "^2.9.0-dev.20180512",
