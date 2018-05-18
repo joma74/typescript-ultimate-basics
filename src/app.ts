@@ -7,7 +7,7 @@ if (module.hot) {
 const pizzas = [
   {
     name: "Pepperoni",
-    toppings: ["pepperoni"]
+    toppings: ["pepperonis"]
   }
 ];
 
