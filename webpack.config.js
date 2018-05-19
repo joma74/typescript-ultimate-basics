@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 const path = require("path");
 const prettyjson = require("prettyjson");
-const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
+const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 
 /**
  * @type {import ("webpack").Configuration}
@@ -23,15 +23,14 @@ var webpackConfig = {
     host: "0.0.0.0"
   },
   module: {
-      rules: [{
-          test: /\.ts$/,
-          use: 'awesome-typescript-loader'
-      }]
+    rules: [
+      {
+        test: /\.ts$/,
+        use: "awesome-typescript-loader"
+      }
+    ]
   },
-  plugins: [
-    new webpack.NamedModulesPlugin(),
-    new HardSourceWebpackPlugin(),
-  ]
+  plugins: [new webpack.NamedModulesPlugin(), new HardSourceWebpackPlugin()]
 };
 
 console.log(prettyjson.render(webpackConfig));

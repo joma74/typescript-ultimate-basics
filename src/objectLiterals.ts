@@ -2,10 +2,10 @@ const olPizza = {
   name: "Pepperoni",
   price: 15,
   getName: function() {
-      return this.name;
+    return this.name;
   },
-  getUpperCaseName(){
-      return this.name.toUpperCase();
+  getUpperCaseName() {
+    return this.name.toUpperCase();
   }
 };
 

@@ -47,6 +47,6 @@ console.log(saArrDeep);
 console.log(saArrDeep2);
 
 // Example #3 String to array
-var saStr = "hello"
+var saStr = "hello";
 var saChars = [...saStr];
 console.log(saChars);
