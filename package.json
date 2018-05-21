@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot",
-    "tsc:watch": "rimraf './build/!(.gitignore)' && node_modules/.bin/tsc --watch",
+    "tsc:build": "node_modules/.bin/tsc",
+    "tsc:clean": "rimraf './build/!(.gitignore)'",
+    "tsc:watch": "yarn tsc:clean && node_modules/.bin/tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
