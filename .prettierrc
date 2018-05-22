@@ -1,14 +1,12 @@
 {
-  "arrowParens": "avoid",
+  "arrowParens": "always",
   "bracketSpacing": true,
   "eslintIntegration": false,
   "ignorePath": ".prettierignore",
-  "jsxBracketSameLine": false,
-  "parser": "babylon",
   "printWidth": 80,
-  "semi": true,
+  "semi": false,
   "singleQuote": false,
   "tabWidth": 2,
-  "trailingComma": "none",
+  "trailingComma": "all",
   "useTabs": false
 }
